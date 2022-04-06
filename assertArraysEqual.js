@@ -1,4 +1,5 @@
 function eqArrays(a,b){
+  let result 
   for ( i =0 ; i < a.length ; i ++){
       if (a.length === b.length && a[i]===b[i]){
         result = true
