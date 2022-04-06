@@ -1,20 +1,17 @@
-let shoppingCart = {
-  four: 'SPAM',
-  6: 'folders',
-  two: 'Brush',
-  one: 'Toothpaste',
-  three: 'toilet paper',
-  7: 'Chrismas Tree',
-  five: 'toilet brush'
+var planetMoons = {
+  mercury: 0,
+  venus: 0,
+  earth: 1,
+  mars: 2,
+  jupiter: 67,
+  saturn: 62,
+  uranus: 27,
+  neptune :3
 };
 
-// I want to print each item (value) in our object
-
-const printCart = function(cart) {
-  // console.log(cart);
-  // I want to loop over an object
-  // METHOD 1 --- Using the IN
-  for (let item in shoppingCart) {
-    console.log(shoppingCart[item]);
-  }
+for (let planet in planetMoons){
+  
+  //let numberOfMoons = planetMoons[planet]
+  //console.log("Planet: " + planet + ", # of Moons: "+ numberOfMoons)
+  console.log(planetMoons.hasOwnProperty())
 }
