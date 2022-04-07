@@ -1,18 +1,17 @@
 const without = function(source,itemsToRemove){
-let itemsToRemove = []
+let results = []
 
+for (let item1 of source){
+  let matched = true
+  for (let item2 of itemsToRemove){
+    if (item1 === item2){
+     matched = false 
+    }
+  }if (matched){
+    results.push(item1)
+  }
 }
-
-
-
-let car = {
-  brand: 'toyota',
-  model: 'GT86',
-  year:  2019,
-  transmissionType: 'manual',
-  colors: ['red', 'black', 'green', 'white', 'baby blue', 'grey'] // the value is a whole array
+return results
 }
-
-for (let color of car.colors){
-  console.log(color)
-}
+console.log(without([1, 2, 3], [1])) // => [2, 3]
+console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
