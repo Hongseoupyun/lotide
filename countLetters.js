@@ -14,7 +14,7 @@ const countLetters = function(string){
 
   for (let letter of allstring){
     if (result[letter]){
-      result[letter] = result[letter]+ 1
+      result[letter] += 1
     }
     else{
       result[letter] = 1
