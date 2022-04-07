@@ -1,4 +1,4 @@
-function eqArrays(a,b){
+function assertArraysEqual(a,b){
   let result 
   for ( i =0 ; i < a.length ; i ++){
       if (a.length === b.length && a[i]===b[i]){
@@ -19,4 +19,4 @@ function eqArrays(a,b){
 
 
 
-eqArrays([1, 2, 3], [1, 2, 3])
+assertArraysEqual([1, 2, 3], [1, 2, 3])
