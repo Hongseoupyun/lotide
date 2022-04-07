@@ -2,12 +2,12 @@ const without = function(source,itemsToRemove){
 let results = []
 
 for (let item1 of source){
-  let matched = true
+  let unmatched = true
   for (let item2 of itemsToRemove){
     if (item1 === item2){
-     matched = false 
+     unmatched = false 
     }
-  }if (matched){
+  }if (unmatched){
     results.push(item1)
   }
 }
