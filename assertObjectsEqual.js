@@ -1,16 +1,12 @@
-const eqObjects = function(object1, object2) {
-  let arrayofkey1 = Object.keys(object1)
-  let arrayofkey2 = Object.keys(object2)
-  if (arrayofkey1.length === arrayofkey2.length){
-    for (let key of arrayofkey1){
-      if (object1[key] === object2[key] ){
-        return true
-      }
-    }
+const assertObjectsEqual = function(actual, expected) {
+  if (Object.is(actual,expected)) {
+    console.log(`✅✅✅ Assertion Passed:${JSON.stringify(actual)}`, "===", `${JSON.stringify(expected)}`);
   }
-return false
+  if (Object.is(actual,expected) === false) {
+    console.log(`🛑🛑🛑 Assertion Failed:${JSON.stringify(actual)}`, '!==', `${JSON.stringify(expected)}`);
+  }
 };
 
-const assertObjectsEqual = function(actual, expected) {
-  // Implement me!
-};
+
+
+assertObjectsEqual({name : 'yun' , age : 26},{name : 'seo', age : 32});
