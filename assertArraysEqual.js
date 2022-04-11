@@ -18,5 +18,7 @@ function assertArraysEqual(a,b){
 
 
 
+module.exports = assertArraysEqual;
 
-assertArraysEqual([1, 2, 3], [1, 2, 3])
+
+
