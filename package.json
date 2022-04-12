@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@hongseoupyun/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lighthouse labs's lodash clone named lotide",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/Hongseoupyun/lotide.git"
   },
-  "author": "",
+  "author": "Hongseoup Yun",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Hongseoupyun/lotide/issues"
