@@ -14,7 +14,7 @@ function reverseWords(arrOfWords) {
 //with .reverse method
 function reverseWords(arrOfWords){
   console.log(arrOfWords.map(word=>{
-    return e.split('').reverse().join('')
+    return word.split('').reverse().join('')
   }))
 }
 console.log(reverseWords(words))
